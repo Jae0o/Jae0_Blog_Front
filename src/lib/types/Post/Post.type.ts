@@ -1,4 +1,10 @@
-export type PostCategory = "BLOG" | "YAP" | "MASILGASIL" | "WORK" | "Frontend";
+export enum PostCategory {
+  BLOG = "BLOG",
+  YAP = "YAP",
+  MASILGASIL = "MASILGASIL",
+  DIARY = "DIARY",
+  FRONTEND = "FRONTEND",
+}
 
 export interface PostData {
   id: string;

@@ -18,6 +18,6 @@ export const MENU_LIST = [
     category: "MASILGASIL",
     Icon: <GreenBookIcon />,
   },
-  { title: "회고 기록", category: "WORK", Icon: <BrownBookIcon /> },
-  { title: "Frontend", category: "Frontend", Icon: <DisplayIcon /> },
+  { title: "회고 기록", category: "DIARY", Icon: <BrownBookIcon /> },
+  { title: "Frontend", category: "FRONTEND", Icon: <DisplayIcon /> },
 ];
