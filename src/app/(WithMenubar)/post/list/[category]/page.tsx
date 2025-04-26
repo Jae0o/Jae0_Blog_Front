@@ -1,5 +1,6 @@
-import { PostListProps } from "./PostList.type";
+import { PostListProps } from "./PostListPage.type";
 import { PostListBanner } from "./_components";
+import { PostList } from "./_containers";
 
 const PostListPage = async ({ params }: PostListProps) => {
   const { category } = await params;
@@ -7,6 +8,8 @@ const PostListPage = async ({ params }: PostListProps) => {
   return (
     <div>
       <PostListBanner category={category} />
+
+      <PostList />
     </div>
   );
 };
