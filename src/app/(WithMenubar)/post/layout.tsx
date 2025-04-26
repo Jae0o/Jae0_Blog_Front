@@ -12,10 +12,10 @@ const PostLayout = ({ children }: PropsWithChildren) => {
         "tablet:p-[1rem]",
       )}
     >
-      <article className="w-full max-w-[120rem] h-full flex flex-col border-2 rounded-[1.2rem] shadow-medium">
+      <div className="w-full max-w-[120rem] h-full flex flex-col border-2 rounded-[1.2rem] shadow-medium">
         <TopDecorator />
         {children}
-      </article>
+      </div>
     </section>
   );
 };
