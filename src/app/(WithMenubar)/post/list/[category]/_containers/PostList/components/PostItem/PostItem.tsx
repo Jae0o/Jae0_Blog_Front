@@ -24,7 +24,7 @@ const PostItem = ({ post }: PostItemProps) => {
         className={twMerge(
           "w-full h-full px-[2rem] py-[1rem] flex items-center gap-[1rem] rounded-[1.2rem] select-none overflow-hidden transition-transform",
           "mobile:flex-col mobile:items-center mobile:justify-center",
-          "hover:scale-[1.02]",
+          "hover:scale-[0.98]",
         )}
         href={ROUTE_PATH.POST_DETAIL(post.id)}
       >

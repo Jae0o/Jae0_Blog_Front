@@ -43,6 +43,59 @@ export const STATIC_META_DATA = {
     creator: CREATOR,
     url: BASE_URL,
   },
+
+  BLOG: {
+    title: `나만의 도화지 Blog 제작기 - ${META_SITE_NAME}`,
+
+    description: "나만의 도화지 Jae0's Blog 제작 과정을 공유하는 공간",
+    keywords: META_COMMON_KEYWORDS,
+    image: META_COMMON_IMAGE,
+    creator: CREATOR,
+    url: BASE_URL,
+  },
+
+  MASILGASIL: {
+    title: `새로운 산책하러 마실가실? - ${META_SITE_NAME}`,
+
+    description:
+      "산택 경로 공유 서비스 '마실가실 MasilGasil의 제작과정에 대한 기록을 공유하는 공간",
+
+    keywords: META_COMMON_KEYWORDS,
+    image: META_COMMON_IMAGE,
+    creator: CREATOR,
+    url: BASE_URL,
+  },
+
+  YAP: {
+    title: `나만의 도화지 Blog 제작기 - ${META_SITE_NAME}`,
+
+    description:
+      "음악 공유 서비스 `Yap`의 제작과정에 대한 기록을 공유하는 공간",
+    keywords: META_COMMON_KEYWORDS,
+    image: META_COMMON_IMAGE,
+    creator: CREATOR,
+    url: BASE_URL,
+  },
+
+  DIARY: {
+    title: `나만의 도화지 Blog 제작기 - ${META_SITE_NAME}`,
+
+    description: "프로젝트 과정에서 느낀 나의 감정을 공유하는 회고 창고",
+    keywords: META_COMMON_KEYWORDS,
+    image: META_COMMON_IMAGE,
+    creator: CREATOR,
+    url: BASE_URL,
+  },
+
+  FRONTEND: {
+    title: `나만의 도화지 Blog 제작기 - ${META_SITE_NAME}`,
+
+    description: "Frontend 개발자로서의 나의 경험과 지식을 공유하는 공간",
+    keywords: META_COMMON_KEYWORDS,
+    image: META_COMMON_IMAGE,
+    creator: CREATOR,
+    url: BASE_URL,
+  },
 };
 
 export type StaticMetaKey = keyof typeof STATIC_META_DATA;
