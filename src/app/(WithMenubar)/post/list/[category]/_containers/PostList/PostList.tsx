@@ -8,7 +8,7 @@ const PostList = async ({ category }: PostListProps) => {
 
   return (
     <article className="w-full grow-[1] overflow-auto">
-      <ul className="w-full h-full py-[1rem] flex flex-col gap-[2rem] overflow-scroll">
+      <ul className="w-full h-full py-[1rem] flex flex-col gap-[2rem] overflow-y-scroll">
         {posts.map(post => (
           <PostItem
             key={post.id}
