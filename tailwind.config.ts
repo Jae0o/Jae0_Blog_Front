@@ -37,6 +37,7 @@ export default {
         transparent_10: "var(--transparent_10)",
         transparent_30: "var(--transparent_30)",
         transparent_50: "var(--transparent_50)",
+        transparent_70: "var(--transparent_70)",
         transparent_90: "var(--transparent_90)",
 
         React: "var(--color-React)",
