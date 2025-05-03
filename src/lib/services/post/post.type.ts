@@ -13,3 +13,11 @@ export interface GetPostListRequest {
 export interface GetPostListResponse {
   posts: PostData[];
 }
+
+export interface GetPostRequest {
+  postId: string;
+}
+
+export interface GetPostResponse {
+  post: PostData;
+}
