@@ -9,7 +9,7 @@ const PostInfo = ({ createAt, updateAt, category, tags }: PostInfoProps) => {
     "w-fit px-[1rem] py-[0.2rem] flex items-center rounded-[3rem] text-medium font-semiBold whitespace-nowrap";
 
   return (
-    <article className="w-full flex justify-between">
+    <article className="w-full flex justify-between select-none">
       <span className="flex flex-col gap-[1rem] text-[1.4rem] font-semiBold">
         <p>{`Create At - ${convertDateFormat(createAt)}`}</p>
         <p>{`Update At - ${convertDateFormat(updateAt)}`}</p>
