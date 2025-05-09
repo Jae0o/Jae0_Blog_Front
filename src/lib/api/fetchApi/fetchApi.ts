@@ -25,15 +25,15 @@ class FetchApi {
     });
 
     if (!res) {
-      // TODO : Error Control
-      throw new Error(`API Error : ${url}`);
+      const error = makeBlogError({ code: 404 });
+
+      throw new Error(JSON.stringify(error));
     }
 
     if (!res.ok) {
       const { code } = await res.json();
 
       const error = makeBlogError({ code });
-      console.log("making error", error);
 
       throw new Error(JSON.stringify(error));
     }
