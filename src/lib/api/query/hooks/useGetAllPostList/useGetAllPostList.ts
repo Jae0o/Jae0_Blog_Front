@@ -8,7 +8,7 @@ const useGetAllPostList = () => {
     queryKey: QUERY_KEY.POST.LIST_ALL(),
     queryFn: ({ pageParam }) => getAllPosts({ cursor: pageParam }),
 
-    initialPageParam: "",
+    initialPageParam: "first",
     getNextPageParam: (prevList, _, prevParam) => {
       if (!prevList) {
         return null;

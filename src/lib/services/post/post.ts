@@ -10,7 +10,7 @@ import {
 } from "./post.type";
 
 export const getAllPosts = async ({ cursor }: GetAllPostsRequest) => {
-  const res = await fetchApi(`/post/all?cursor=${cursor ?? ""}`);
+  const res = await fetchApi(`/post/all?cursor=${cursor ?? "first"}`);
 
   if (!res.ok) {
     throw new Error(res.statusText);
