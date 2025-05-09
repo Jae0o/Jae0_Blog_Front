@@ -3,6 +3,7 @@
 //     ...options,
 //   });
 // };
+import { makeBlogError } from "@/lib/utils";
 
 // export default fetchApi;
 
@@ -31,8 +32,10 @@ class FetchApi {
     if (!res.ok) {
       const { code } = await res.json();
 
-      // TODO : Error Control
-      console.log("Test : TEST , ", code);
+      const error = makeBlogError({ code });
+      console.log("making error", error);
+
+      throw new Error(JSON.stringify(error));
     }
 
     const result: T = await res.json();
