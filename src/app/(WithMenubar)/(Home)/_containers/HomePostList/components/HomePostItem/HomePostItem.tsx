@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
+import { convertDateFormat } from "@/lib/utils";
+
 import { ROUTE_PATH } from "@/lib/constants";
 import { PostData } from "@/lib/types";
 
@@ -40,7 +42,7 @@ const HomePostItem = ({ post }: HomePostItemProps) => {
             "absolute top-[1.6rem] left-[-0.8rem]",
           )}
         >
-          {post.createAt}
+          {convertDateFormat(post.createAt)}
         </p>
 
         <p
